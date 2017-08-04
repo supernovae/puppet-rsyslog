@@ -83,7 +83,7 @@ class rsyslog::client (
   }
 
   if $content_real {
-    rsyslog::snippet { '50_default':
+    rsyslog::snippet { '50-default':
       ensure  => present,
       content => $content_real,
     }
